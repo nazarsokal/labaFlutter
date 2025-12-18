@@ -1,4 +1,4 @@
-{
+{"flutter":{"platforms":{"android":{"default":{"projectId":"music-diary-cb85e","appId":"1:582768991231:android:2d901f378caf90e6fca5ca","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"music-diary-cb85e","appId":"1:582768991231:ios:df7530bb408acdf4fca5ca","uploadDebugSymbols":true,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"music-diary-cb85e","appId":"1:582768991231:ios:2eb89e08de6f2b0dfca5ca","uploadDebugSymbols":true,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"music-diary-cb85e","configurations":{"android":"1:582768991231:android:2d901f378caf90e6fca5ca","ios":"1:582768991231:ios:df7530bb408acdf4fca5ca","macos":"1:582768991231:ios:2eb89e08de6f2b0dfca5ca","web":"1:582768991231:web:655906a1799a18e3fca5ca","windows":"1:582768991231:web:627a9ca2f20cb665fca5ca"}}}}},
   "hosting": {
     "site": "music-diary-cb85e",
     "public": "build/web",
