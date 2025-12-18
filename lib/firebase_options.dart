@@ -17,29 +17,17 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -54,10 +42,48 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyD-ig2uOSO6xoh0IkMiFgoH0_k9neItGKk',
+    appId: '1:582768991231:ios:df7530bb408acdf4fca5ca',
+    messagingSenderId: '582768991231',
+    projectId: 'music-diary-cb85e',
+    storageBucket: 'music-diary-cb85e.firebasestorage.app',
+    iosBundleId: 'com.nazarsokalchuk.musicDiary',
+  );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyB5-Vx4YNK6uL7maKzYQsvZnokXGc7D8Fg',
+    appId: '1:582768991231:web:655906a1799a18e3fca5ca',
+    messagingSenderId: '582768991231',
+    projectId: 'music-diary-cb85e',
+    authDomain: 'music-diary-cb85e.firebaseapp.com',
+    storageBucket: 'music-diary-cb85e.firebasestorage.app',
+    measurementId: 'G-6GRP5Z22VS',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyD-ig2uOSO6xoh0IkMiFgoH0_k9neItGKk',
     appId: '1:582768991231:ios:2eb89e08de6f2b0dfca5ca',
     messagingSenderId: '582768991231',
     projectId: 'music-diary-cb85e',
     storageBucket: 'music-diary-cb85e.firebasestorage.app',
     iosBundleId: 'com.example.musicDiary',
   );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyC3HPZeoB5xStMfhz6ZenjqLnkrbC3X1Jw',
+    appId: '1:582768991231:android:2d901f378caf90e6fca5ca',
+    messagingSenderId: '582768991231',
+    projectId: 'music-diary-cb85e',
+    storageBucket: 'music-diary-cb85e.firebasestorage.app',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyB5-Vx4YNK6uL7maKzYQsvZnokXGc7D8Fg',
+    appId: '1:582768991231:web:627a9ca2f20cb665fca5ca',
+    messagingSenderId: '582768991231',
+    projectId: 'music-diary-cb85e',
+    authDomain: 'music-diary-cb85e.firebaseapp.com',
+    storageBucket: 'music-diary-cb85e.firebasestorage.app',
+    measurementId: 'G-6G74C4PWWG',
+  );
+
 }

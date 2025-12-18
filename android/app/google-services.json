@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "582768991231",
+    "project_id": "music-diary-cb85e",
+    "storage_bucket": "music-diary-cb85e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582768991231:android:7e9cdc3043cdabeefca5ca",
+        "android_client_info": {
+          "package_name": "com.example.diary_music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3HPZeoB5xStMfhz6ZenjqLnkrbC3X1Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582768991231:android:2d901f378caf90e6fca5ca",
+        "android_client_info": {
+          "package_name": "com.example.music_diary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3HPZeoB5xStMfhz6ZenjqLnkrbC3X1Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
